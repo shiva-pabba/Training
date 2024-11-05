@@ -1,0 +1,219 @@
+import java.util.Scanner;
+public class EvenOdd {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int num = sc.nextInt();
+        if (num % 2 == 0) {
+            System.out.println(num + " is even.");
+        } else {
+            System.out.println(num + " is odd.");
+        }
+    }
+}
+*************************************************************************************perfect cube****************************
+import java.util.Scanner;
+public class EvenOdd {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int num = sc.nextInt();
+        int i,n;
+        for (i=1;i<=num;i++){
+            n=i*i*i;
+        if (n == num) {
+            System.out.println(num + " is perfect cube");
+            break;
+        }
+        else if (n>num){
+             System.out.println(num + " is not perfect cube");
+             break;
+        }
+        }
+    }
+}
+******************************************************************perfect Square*******************************************************
+import java.util.Scanner;
+public class EvenOdd {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int num = sc.nextInt();
+        int i,n;
+        for (i=1;i<=num;i++){
+            n=i*i;
+        if (n == num) {
+            System.out.println(num + " is perfect square");
+            break;
+        }
+        else if (n>num){
+             System.out.println(num + " is not perfect square");
+             break;
+        }
+        }
+    }
+}
+********************************leap year*****************************************************************88
+import java.util.Scanner;
+public class LeapYear {
+    public static void main(String[] args) {
+        Scanner scan= new Scanner(System.in);
+        System.out.println("Enter a year:");
+        int year = scan.nextInt();
+        if ((year % 4 == 0 && year % 100 != 0) || year % 400==0) {
+            System.out.println(year + " is a leap year.");
+        } else {
+            System.out.println(year + " is not a leap year.");
+        }
+    }
+}
+*****************************************************code for printing month name*************************
+import java.util.Scanner;
+public class EvenOdd {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int num = sc.nextInt();
+        switch(num){
+            case 1:System.out.println("JANUARY");
+            break;
+            case 2:System.out.println("FEBRUARY");
+            break;
+            case 3:System.out.println("MARCH");
+            break;
+            case 4:System.out.println("APRIL");
+            break;
+            case 5:System.out.println("MAY");
+            break;
+            case 6:System.out.println("JUNE");
+            break;
+            case 7:System.out.println("JULY");
+            break;
+            case 8:System.out.println("AUGUST");
+            break;
+            case 9:System.out.println("SEPTEMBER");
+            break;
+            case 10:System.out.println("OCTOBER");
+            break;
+            case 11:System.out.println("NOVEMBER");
+            break;
+            case 12:System.out.println("DECEMBER");
+            break;
+            default:System.out.println("enter correct number");
+            break;
+        }
+    }
+}
+****************************************************************code for printing weekday for given number*****************************
+import java.util.Scanner;
+public class shiva{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int num = sc.nextInt();
+        switch(num){
+            case 1:System.out.println("SUNDAY");
+            break;
+            case 2:System.out.println("MONDAY");
+            break;
+            case 3:System.out.println("TUESDAY");
+            break;
+            case 4:System.out.println("WEDNESDAY")
+            break;
+            case 5:System.out.println("THURSDAY");
+            break;
+            case 6:System.out.println("FRIDAY");
+            break;
+            case 7:System.out.println("SATURDAY");
+            break;
+            default:System.out.println("enter correct number");
+            break;
+        }
+    }
+}
+*********************************************natural numbers*******************************************
+import java.util.Scanner;
+public class shiva{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int num = sc.nextInt();
+        int i;
+        for(i=1;i<=num;i++){
+         System.out.println(i);   
+        }
+    }
+}
+******************************************8print odd numbers between 1 and 100******************************
+import java.util.Scanner;
+public class shiva{
+    public static void main(String[] args) {
+        int i;
+        for(i=1;i<=100;i++){
+            if(i%2!=0)
+         System.out.println(i);   
+        }
+    }
+}
+****************************************print even numbers between 1 and 100***********************************
+import java.util.Scanner;
+public class shiva{
+    public static void main(String[] args) {
+        int i;
+        for(i=1;i<=100;i++){
+            if(i%2==0)
+         System.out.println(i);   
+        }
+    }
+}
+************************************************factorial*********************************************************88
+import java.util.Scanner;
+public class shiva{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int num = sc.nextInt();
+        int i,a=1;
+        for(i=1;i<=num;i++){
+            a=a*i;
+        }
+        System.out.println(a);  
+    }
+}
+************************************reverse a number**************************************************
+import java.util.Scanner;
+public class shiva{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int num = sc.nextInt();
+        int rev=0,d;
+        while(num!=0){
+            d=num%10;
+            rev=rev*10+d;
+            num=num/10;
+        }
+        System.out.println(rev);  
+    }
+}
+*******************************************************amstrong number**************************************************
+import java.util.Scanner;
+public class shiva{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int num = sc.nextInt();
+        int m=num,d,e=0;
+        while(num!=0){
+            d=num%10;
+            e=e+d*d*d;
+            num=num/10;
+        }
+        if(e==m){
+        System.out.println("amstrong number"); 
+        }
+        else{
+             System.out.println("not amstrong number");
+        }
+    }
+}
